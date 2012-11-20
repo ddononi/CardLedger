@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#665544" >
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="bold"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:text="이달 카드 사용 내역" />
+    </RelativeLayout>
+
+
+       <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/kb_label"  
+	        android:layout_marginTop="20dp"
+	        android:orientation="horizontal" >
+	        <!--  국민 카드 -->
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="카드사"     
+	            android:tag="bold"
+	            android:textColor="#333333"
+	            android:textSize="15dp"   
+	            android:layout_marginLeft="15dp"
+         
+	          />
+	        
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="사용금액  "     
+	            android:gravity="right"
+	            android:tag="bold"
+	            android:textColor="#333333"
+	            android:textSize="15dp"   
+	            android:layout_marginRight="40dp"
+           
+	          />  
+   	 </LinearLayout>
+    <LinearLayout
+        android:background="#666666"
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+       <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/kb_label"  
+	        android:visibility="visible"
+	        android:orientation="horizontal" >
+	        <!--  국민 카드 -->
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="국민카드 : "     
+	            android:tag="bold"
+	            android:textColor="#333333"
+	            android:textSize="15dp"   
+	            android:layout_marginLeft="15dp"
+	          />
+	        
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:tag="bold"
+	            android:textColor="#333333"
+	            android:textSize="15dp"   
+	            android:layout_marginRight="40dp"
+	            android:id="@+id/kb_sum"            
+	          />  
+   	 </LinearLayout>
+        <!--  롯데카드-->
+       <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:id="@+id/lotte_label"  
+            android:visibility="gone"
+	        android:orientation="horizontal" >
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="롯데카드 : "     
+	            android:tag="bold"
+	            android:textColor="#333333"
+	            android:textSize="15dp"   
+	            android:layout_marginLeft="15dp"
+	          />
+	        
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+  
+	            android:gravity="right"
+	            android:tag="bold"
+	            android:textColor="#333333"
+	            android:textSize="15dp"   
+	            android:layout_marginRight="40dp"
+	            android:id="@+id/lotte_sum"            
+	          />  
+   	 </LinearLayout>
+          
+        
+        <!--  현대카드 -->
+       <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:id="@+id/hd_label"  
+	        android:visibility="gone"
+	        android:orientation="horizontal" >
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="현대카드 : "     
+	            android:tag="bold"
+	            android:textColor="#333333"
+	            android:textSize="15dp"   
+	            android:layout_marginLeft="15dp"
+	          />
+	        
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+  
+	            android:gravity="right"
+	            android:tag="bold"
+	            android:textColor="#333333"
+	            android:textSize="15dp"   
+	            android:layout_marginRight="40dp"
+	            android:id="@+id/hd_sum"            
+	          />  
+   	 </LinearLayout>  
+   	 
+        <!--  비씨카드 -->
+       <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:id="@+id/bc_label"  
+	        android:visibility="gone"
+	        android:orientation="horizontal" >
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="비씨카드 : "     
+	            android:tag="bold"
+	            android:textColor="#333333"
+	            android:textSize="15dp"   
+	            android:layout_marginLeft="15dp"
+	          />
+       
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+ 
+	            android:gravity="right"
+	            android:tag="bold"
+	            android:textColor="#333333"
+	            android:textSize="15dp"   
+	            android:layout_marginRight="40dp"
+	            android:id="@+id/bc_sum"           
+	          />  
+   	 </LinearLayout>        
+          
+        
+       
+        <!--  씨티카드 -->
+       <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:id="@+id/city_label"  
+	        android:visibility="gone"
+	        android:orientation="horizontal" >
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="씨티카드 : "     
+	            android:tag="bold"
+	            android:textColor="#333333"
+	            android:textSize="15dp"   
+	            android:layout_marginLeft="15dp"
+	          />
+	        
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+  
+	            android:gravity="right"
+	            android:tag="bold"
+	            android:textColor="#333333"
+	            android:textSize="15dp"   
+	            android:layout_marginRight="40dp"
+	            android:id="@+id/city_sum"            
+	          />  
+   	 </LinearLayout>     
+   	 
+        <!--  하나카드 -->
+       <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:id="@+id/hana_sk_label"  
+	        android:visibility="gone"
+	        android:orientation="horizontal" >
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="하나카드 : "     
+	            android:tag="bold"
+	            android:textColor="#333333"
+	            android:textSize="15dp"   
+	            android:layout_marginLeft="15dp"
+	          />
+	        
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:tag="bold"
+	            android:textColor="#333333"
+	            android:textSize="15dp"   
+	            android:layout_marginRight="40dp"
+	            android:id="@+id/hana_sum"            
+	          />  
+   	 </LinearLayout>   
+
+       
+        <!--  신한카드	-->
+       <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:id="@+id/sh_label"  
+	        android:visibility="gone"
+	        android:orientation="horizontal" >
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="신한카드 : "     
+	            android:tag="bold"
+	            android:textColor="#333333"
+	            android:textSize="15dp"   
+	            android:layout_marginLeft="15dp"
+	          />
+	        
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="right"
+	            android:tag="bold"
+	            android:textColor="#333333"
+	            android:textSize="15dp"   
+	            android:layout_marginRight="40dp"
+	            android:id="@+id/sh_sum"            
+	          />  
+   	 </LinearLayout>
+      
+    <!--  총 사용 금액 -->
+    <LinearLayout
+        android:background="#666666"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_height="2dp"
+        android:id="@+id/total_line"
+         />
+       <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="15dp"
+	        android:id="@+id/total_label"  
+	        android:orientation="horizontal" >
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="총 사용금액 : "     
+	            android:tag="bold"
+	            android:textColor="#333333"
+	            android:textSize="15dp"   
+	            android:layout_marginLeft="15dp"
+           
+	          />
+	        
+	        <TextView
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:text="200,000원 "     
+	            android:gravity="right"
+	            android:tag="bold"
+	            android:textColor="#333333"
+	            android:textSize="15dp"   
+	            android:layout_marginRight="40dp"
+	            android:id="@+id/total_sum"            
+	          />  
+   	 </LinearLayout> 
+    
+     
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40px"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal|center_vertical"            
+            android:background="@drawable/list_numinfo_bg" >
+
+            <TextView
+                android:id="@+id/total_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="사용 건수 : "
+                android:textColor="#fe861b"
+                android:textSize="29px" />
+     </LinearLayout>
+
+</LinearLayout>

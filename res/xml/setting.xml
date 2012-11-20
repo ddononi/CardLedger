@@ -1,0 +1,36 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="알람설정" >
+
+        <CheckBoxPreference
+            android:key="alarm"
+            android:defaultValue="true"
+            android:summary="카드내역알림 알람 설정"
+            android:title="알람설정" />
+
+        <ListPreference
+            android:dialogTitle="한도알림"
+            android:entries="@array/card_limit_preference"
+            android:entryValues="@array/card_limit_value_preference"
+            android:key="beforeAlarm"
+            android:summary="카드사용한도금액 알림설정"
+            android:title="한도 금액 설정" />
+            
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="알람방식설정" >
+
+        <CheckBoxPreference
+            android:key="sound"
+            android:defaultValue="true"
+            android:summary="알람이 발생하면 사운드로 알려줌"
+            android:title="소리알림" />
+
+        <CheckBoxPreference
+            android:key="vibration"
+            android:defaultValue="true"
+            android:summary="알람이 발생하면  진동으로 알려줌"
+            android:title="진동발생" />
+    </PreferenceCategory>
+        
+</PreferenceScreen>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">카드가계부</string>
+    <string name="promte">카드사를 선택하세요</string>
+    <string-array name="card_array">
+        <item >국민카드</item>
+        <item >롯데카드</item>
+        <item >현대카드</item>
+        <item >신한카드</item>
+        <item >기업BC카드</item>
+        <item >하나SK카드</item>
+        <item >씨티카드</item>
+    </string-array>
+    
+    <string-array name="card_limit_preference">
+        <item>100,000원</item>
+        <item>200,000원</item>
+        <item>300,000원</item>
+        <item>400,000원</item>        
+        <item>500,000원</item>
+        <item>600,000원</item>
+        <item>700,000원</item>
+        <item>800,000원</item>
+        <item>900,000원</item>
+        <item>1000,000원</item>    
+        <item>1500,000원</item>  
+        <item>2000,000원</item>                                                      
+    </string-array>
+    
+    <string-array name="card_limit_value_preference">
+        <item>100000</item>
+        <item>200000</item> 
+        <item>300000</item> 
+        <item>400000</item> 
+        <item>500000</item> 
+        <item>600000</item> 
+        <item>700000</item>
+        <item>800000</item> 
+        <item>900000</item> 
+        <item>1000000</item>       
+        <item>1500000</item>   
+        <item>2000000</item>                                                                              
+    </string-array>
+        
+</resources>
